@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+body {
+    padding: 20px;
+    background-image: url("./images/bachg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+section {
+    padding: 20px;
+}
+
+
+.bannerBgImage {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.sectionbg {
+    background-size: cover;
+
+}
+
+.bannerText .bannerDesc{
+    text-align: right;
+    position: absolute;
+    top: 45%;
+    right: 40%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 350%;
+}
+h2{
+    position: absolute;
+    top: 50%;
+    right: 60%;
+}
+.bannerimg {
+
+    object-position: right;
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    height: 450px;
+    width: 450px;
+    border: 3px solid rgb(5, 0, 10);
+    border-radius: 50%;
+}
+
+div.about {
+    height: 500px;
+    width: 600px;
+    font-size: larger;
+    text-align: justify;
+}
+
+
+
+
+.bannerTitle {
+    font-size: 4rem;
+}
+
+.bannerDesc {
+    font-size: 2rem;
+}
+
+.card {
+    cursor: pointer;
+    height: 350px;
+    border: 3px solid rgb(5, 0, 10);
+    color: black;
+
+}
+
+.cardp {
+    cursor: pointer;
+    height: 450px;
+    border: 3px solid rgb(5, 0, 10);
+}
+
+.ecards {
+    cursor: pointer;
+    height: 400px;
+    border: 3px solid rgb(5, 0, 10);
+}
+
+
+
+.bIcon {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.img-fluid:hover {
+    border: 3px solid rgb(5, 0, 10);
+}
+
+.card-img {
+    height: 300px;
+}
+
+.cards {
+    cursor: pointer;
+    height: 400px;
+}
+
+.backimg {
+    opacity: 0.2;
+    background-size: cover;
+}
+
+.card-text {
+    color: rgba(5, 4, 9, 0.831);
+    text-align: justify;
+    padding: 10px;
+    ;
+}
+
+.card-title {
+    color: rgba(5, 4, 9, 0.831);
+    text-align: justify;
+    padding: 4px;
+    ;
+}
+
+ul {
+    font-size: larger;
+}
+
+.cardimg {
+    height: "200px";
+    width: "200px";
+}
+
+.cardimgaging {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-right: 130px;
+    height: 300px;
+    width: 700px;
+
+}
+
+
+.btn {
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardctext {
+    color: rgb(75, 3, 229);
+}
+
+img.big {
+    display: none;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.container2 {
+    position: relative;
+    min-height: 50vh;
+}
+
+.container h1 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: #0c0c0c;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+ .intern{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: #0c0c0c;
+    text-align: center;
+    text-transform: capitalize;
+}
+.container2 .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+.container .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container2 .image-container .image {
+    height: 310px;
+    width: 420px;
+    border: 5px solid #0c0c0c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .image-container .image {
+    height: 310px;
+    width: 420px;
+    border: 5px solid #0c0c0c;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container2 .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.container .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.container2 .image-container .image:hover img {
+    transform: scale(1.1);
+}
+.container .image-container .image:hover img {
+    transform: scale(1.1);
+}
+.container2 .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.container .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.container2 .popup-image span {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.container .popup-image span {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.container2 .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+.container .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+@media (max-width:768px) {
+    .container .popup-image img {
+        width: 95%;
+    }
+}
+@media (max-width:768px) {
+    .container2 .popup-image img {
+        width: 95%;
+    }
+}
+.cardcont {
+    cursor: pointer;
+    height: 80px;
+    width: 300px;
+    border: 3px solid rgb(5, 0, 10);
+    color: rgba(6, 6, 6, 0.9);
+    border-radius: 15px;
+    background-color: rgb(118, 136, 252);
+    font-size: larger;
+}
+a{
+    color: black;
+    
+}
+
+
+
+  </style>
+</head>
+
+<body>
+  <!-- NavBar start-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Educational Qualification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#internship">Internships</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#certificates">Certificates</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- NavBar End-->
+  <!--!Banner Start-->
+  <section class="bannerBgImage " id="home">
+    <div class="container-fluid">
+      <div class="row-md-12">
+        <div>
+          <div class="col-md-4">
+            <img src="pic2.jpeg" alt="passportpictuire" class="bannerimg img-fluid round-circle">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-mid-12 bannerText">
+          <h1 class="bannerDesc"> Doddi Yasaswini</h1>
+          <h2 >D/o Mr. Doddi Srinivas</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--!Banner End-->
+  <!--!About Start-->
+  <section class="sectionbg" id="about">
+    <div class="container-fluid about">
+      <div class="row text-center">
+        <h1 class="text-center ">About Me</h1>
+        <p class="about">
+          I am Doddi Yasaswini, D/o Mr. Doddi Srinivas. I am currently pursuing B.Tech final year. I am an organised,
+          efficient and hard working person, and am willing to discover and accept new ideas which can be put into
+          practice effectively. I am a good listener and learner, able to communicate well with a group and on an
+          individual level. I am able to motivate and direct my talents and skills to meet objectives. Looking forward
+          to work for my dream which provides the chance to improve my skills to learn and grow
+          along with the organization goals.<br>
+          As coming to my technical skills, I have knowledge in <b>C, Python </b>languages and I am masters in <b>Java
+            Programming </b> upto Oop concepts.
+          I have knowledge in <b>HTML</b> and <b>CSS</b> and <b>JavaScript </b>scripting language. I have some knowledge
+          in <b>Data Structures</b> and <b>Database</b>.
+          <br> I am proficient enough in English, Telugu and Hindi.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!--!About End-->
+  <!--Education Start-->
+  <section class="sectionbg" id="education">
+    <div class="container-fluid">
+      <h1 class="text-center">Educational Qualification</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card my-3 ecards ">
+            <h3 class="card-title text-center "><br><i class="bi bi-mortarboard-fill"> </i>&nbspUnder Graduation
+            </h3>
+            <p class="card-text text-color">
+            <ul>
+              <li><b>College :</b> Vignan's Institute of Engineering for Women</li>
+              <li><b>Course :</b> B.Tech</li>
+              <li><b>Specialization :</b> Computer Science and Engineering </li>
+              <li><b>Graduation Year:</b> 2020-2024</li>
+              <li><b>CGPA :</b> 7.48(until now)</li>
+              <li><b>Place : </b>Duvvada</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3 ecards">
+            <h3 class="card-title text-center"><br><i class="bi bi-mortarboard-fill"></i> Intermediate Education</h3>
+            <p class="card-text text-color">
+            <ul>
+              <li><b>College :</b> Sri Chaitanya Junior College</li>
+              <li><b>Course :</b>&nbsp;State Board of Intermediate Education</li>
+              <li><b>Specialization :</b> M.P.C </li>
+              <li><b>Graduation Year:</b> 2018-2020</li>
+              <li><b>CGPA :</b> 9.13</li>
+              <li><b>Place : </b>Ankapalli</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card my-3 ecards">
+            <h3 class="card-title text-center"><br> <i class="bi bi-mortarboard-fill"></i>Secondary Education</h3>
+            <p class="card-text text-color">
+            <ul>
+              <li><b>School :</b>ST.Judes.E.M.High.School </li>
+              <li><b>Course :</b> &nbsp;State Board of Secondary Education</li>
+              <li><b>Graduation Year:</b> 2017-2018</li>
+              <li><b>CGPA :</b> 10</li>
+              <li><b>Place : </b>Yelamanchilli</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Education End-->
+  <!--Projects Start!!-->
+  <section class="sectionbg" id="projects">
+    <div class="container-fluid">
+      <h1 class="text-center ">Projects</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="cardp text-bg">
+            <img src="spam.png" class="cardimgaging" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">SMS Spam Classifier</h4>
+              <p class="card-text">The domain of this project is Machine Learning. This project is based on classifying
+                spam messages to ensure security. Users can able
+                to know whether the message is spam or not by checking the message using this spam classifier.
+                <br>As a team member my role is to cleaning and preprocessing the training dataset.
+              </p>
+            </div>
+          </div>
+        </div>
+		
+        <div class="col-md-6">
+          <div class="cardp text-bg">
+            <img src="boook.png" class="cardimgaging" alt="...">
+            <div class="card-body">
+              <h4 class="card-title ">Book Query App using Python</h4>
+              <p class="card-text">The project will develop A book query 
+			  application in Python would be a program that allows users to search for and retrieve information
+			  about books, such as their titles, authors, and descriptions and myself developed this 
+			  application using Python. In this project my role is modeling and deployment of the
+                project.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Projects End-->
+  <!--Internships start-->
+  <section class="sectionbg" id="internship">
+    <div class="container-fluid">
+      <h1 class="text-center s">Internships</h1>
+      <div class="row">
+        <div class="container2">
+          <div class="image-container">
+            <div class="image"><img src="cyber.jpeg" alt="">
+              <p class="intern">Completed Internship on Cyber Security offered by APSCHE EDUSKILLS. During this
+                Internship I was known
+                about Fundamentals of Cyber Security and the the practice of defending computers, servers, mobile
+                devices, electronic systems, networks, and data from malicious attacks.</p>
+            </div>
+          </div>
+          <div class="popup-image">
+            <span>&times;</span>
+            <img src="./images/python.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Internships end-->
+  <!--Certificates start-->
+  <section class="sectionbg" id="certificates">
+    <div class="container-fluid">
+      <h1 class="text-center ">Certificates</h1>
+      <div class="row">
+        <div class="container">
+          <div class="image-container">
+            <div class="image"><img src="iot.jpeg.jpeg" alt="IoT"></div>
+            <div class="image"><img src="dataanalytics.jpeg.jpeg" alt="JavaScript"></div>
+            <div class="image"><img src="node.js.jpeg" alt="nodejs"></div>
+            <div class="image"><img src="js.jpeg.jpeg" alt="js"></div>
+            <div class="image"><img src="data.jpeg.jpeg" alt="data"></div>
+            <div class="image"><img src="html.jpeg" alt="html"></div>
+          </div>
+          <div class="popup-image">
+            <span>&times;</span>
+            <img src="./images/python.png" alt="">
+          </div>
+          <script>
+            document.querySelectorAll('.image-container img').forEach(image => {
+              image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+              }
+            });
+            document.querySelector('.popup-image span').onclick = () => {
+              document.querySelector('.popup-image').style.display = 'none';
+            }</script>
+        </div>
+      </div>
+  </section>
+  <!--Certificates end-->
+  <!--footer start-->
+  <footer>
+    <section class="sectionbg" id="contact">
+      <div class="contact-info">
+        <h1 class="text-center ">My Contacts</h1><br>
+        <div class="row">
+          <div class="col-md-3"><br>
+            <a href="mailto:yasaswinidoddi@gmail.com">
+              <div class="cardcont text-center">
+                <i class="bi bi-envelope-at-fill "></i>
+                <p class="text-center ">yasaswinidoddi@gmail.com</p>
+              </div>
+            </a>
+          </div>
+          <br>
+          <div class="col-md-3"><br>
+            <a href="tel:9390430234">
+              <div class="cardcont text-center">
+                <i class="bi bi-telephone-fill"></i>
+                <p class="text-center ">+919390430236</p>
+              </div>
+            </a>
+          </div><br>
+          <div class="col-md-3"><br>
+            <a href="https://www.linkedin.com/in/Doddi-Yasaswini-4b8740210">
+              <div class="cardcont text-center">
+                <i class="bi bi-linkedin text-center"></i>
+                <p class="text-center ">LinkedIn</p>
+              </div>
+            </a>
+          </div><br>
+          <div class="col-md-3"><br>
+            <a href="https://github.com/">
+              <div class="cardcont text-center">
+                <i class="bi bi-github"></i>
+                <p class="text-center ">GitHub</p>
+              </div>
+            </a>
+          </div>
+          <br>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!--footer end-->
+</body>
+
+</html>
